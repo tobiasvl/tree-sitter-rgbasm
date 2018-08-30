@@ -1,0 +1,127 @@
+======
+CALL n16
+======
+
+call $8000
+call Label
+call Label.sub_label
+
+---
+
+(source_file
+  (mnemonic (n16))
+  (mnemonic (n16 (label)))
+  (mnemonic (n16 (label))))
+
+======
+CALL cc,n16
+======
+
+call c, $8000
+call c, Label
+call c, Label.sub_label
+call nc, $8000
+call nc, Label
+call nc, Label.sub_label
+call z, $8000
+call z, Label
+call z, Label.sub_label
+call nz, $8000
+call nz, Label
+call nz, Label.sub_label
+
+---
+
+(source_file
+  (mnemonic (cc) (n16))
+  (mnemonic (cc) (n16 (label)))
+  (mnemonic (cc) (n16 (label)))
+  (mnemonic (cc) (n16))
+  (mnemonic (cc) (n16 (label)))
+  (mnemonic (cc) (n16 (label)))
+  (mnemonic (cc) (n16))
+  (mnemonic (cc) (n16 (label)))
+  (mnemonic (cc) (n16 (label)))
+  (mnemonic (cc) (n16))
+  (mnemonic (cc) (n16 (label)))
+  (mnemonic (cc) (n16 (label))))
+
+======
+JP HL
+======
+
+jp hl
+
+---
+
+(source_file
+  (mnemonic (hl)))
+
+======
+JP n16
+======
+
+jp $8000
+jp Label
+jp Label.sub_label
+
+---
+
+(source_file
+  (mnemonic (n16))
+  (mnemonic (n16 (label)))
+  (mnemonic (n16 (label))))
+
+======
+JP cc,n16
+======
+
+jp c, $8000
+jp c, Label
+jp c, Label.sub_label
+jp nc, $8000
+jp nc, Label
+jp nc, Label.sub_label
+jp z, $8000
+jp z, Label
+jp z, Label.sub_label
+jp nz, $8000
+jp nz, Label
+jp nz, Label.sub_label
+
+---
+
+(source_file
+  (mnemonic (cc) (n16))
+  (mnemonic (cc) (n16 (label)))
+  (mnemonic (cc) (n16 (label)))
+  (mnemonic (cc) (n16))
+  (mnemonic (cc) (n16 (label)))
+  (mnemonic (cc) (n16 (label)))
+  (mnemonic (cc) (n16))
+  (mnemonic (cc) (n16 (label)))
+  (mnemonic (cc) (n16 (label)))
+  (mnemonic (cc) (n16))
+  (mnemonic (cc) (n16 (label)))
+  (mnemonic (cc) (n16 (label))))
+
+=======
+RET
+=======
+
+ret
+reti
+ret c
+ret nc
+ret z
+ret nz
+
+---
+
+(source_file
+  (mnemonic)
+  (mnemonic)
+  (mnemonic (cc))
+  (mnemonic (cc))
+  (mnemonic (cc))
+  (mnemonic (cc)))

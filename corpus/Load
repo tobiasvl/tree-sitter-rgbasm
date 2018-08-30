@@ -1,0 +1,202 @@
+==========
+LD A, B
+==========
+
+ld a, b
+
+---
+
+(source_file (mnemonic (r8) (r8)))
+
+==========
+LD B, C
+==========
+
+ld b, c
+
+---
+
+(source_file (mnemonic (r8) (r8)))
+
+=============
+LD A, 87
+=============
+
+ld a, 87
+
+---
+
+(source_file (mnemonic (r8) (n8)))
+
+=============
+LD A, $87
+=============
+
+ld a, $87
+
+---
+
+(source_file (mnemonic (r8) (n8)))
+
+=============
+LD HL, $8000
+=============
+
+ld hl, $8000
+
+---
+
+(source_file (mnemonic (r16) (n16)))
+
+=============
+LD [HL], B
+=============
+
+ld [hl], b
+
+---
+
+(source_file (mnemonic (deref_hl (hl) (r8)))
+
+=============
+LD [HL], 87
+=============
+
+ld [hl], 87
+
+---
+
+(source_file (mnemonic (deref_hl (hl) (n8)))
+
+=============
+LD B, [HL]
+=============
+
+ld b, [hl]
+
+---
+
+(source_file (mnemonic (r8) (deref_hl (hl))))
+
+=============
+LD [BC], A
+=============
+
+ld [bc], a
+
+---
+
+(source_file (mnemonic))
+
+=============
+LD [$8000], A
+=============
+
+ld [$8000], a
+
+---
+
+(source_file (mnemonic))
+
+
+=============
+LD A, [BC]
+=============
+
+ld a, [bc]
+
+---
+
+(source_file (mnemonic))
+
+=============
+LD A, [$8000]
+=============
+
+ld a, [$8000]
+
+---
+
+(source_file (mnemonic))
+
+
+=============
+LD [HL+], A
+=============
+
+ld [hl+], a
+
+---
+
+(source_file (mnemonic))
+
+=============
+LD [HL-], A
+=============
+
+ld [hl-], a
+
+---
+
+(source_file (mnemonic))
+
+
+=============
+LD A, [HL+]
+=============
+
+ld a, [hl+]
+
+---
+
+(source_file (mnemonic))
+
+=============
+LD A, [HL-]
+=============
+
+ld a, [hl-]
+
+---
+
+(source_file (mnemonic))
+
+=============
+LD [87], A
+=============
+
+ld [87], a
+
+---
+
+(source_file (mnemonic))
+
+=============
+LD [C], A
+=============
+
+ld [c], a
+
+---
+
+(source_file (mnemonic))
+
+=============
+LD A, [87], A
+=============
+
+ld a, [87]
+
+---
+
+(source_file (mnemonic))
+
+=============
+LD A, [C]
+=============
+
+ld a, [c]
+
+---
+
+(source_file (mnemonic))

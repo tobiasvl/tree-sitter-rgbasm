@@ -1,0 +1,21 @@
+{
+  "name": "tree-sitter-rgbasm",
+  "version": "0.0.1",
+  "description": "Tree-sitter grammar for RGBASM",
+  "homepage": "https://github.com/tobiasvl/tree-sitter-rgbasm",
+  "bugs": {
+    "url": "https://github.com/tobiasvl/tree-sitter-rgbasm/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Tobias V. Langhoff",
+    "email": "tobias@langhoff.no"
+  },
+  "repository": "github:tobiasvl/tree-sitter-rgbasm",
+  "devDependencies": {
+    "tree-sitter-cli": ""
+  },
+  "dependencies": {
+    "node-gyp": "^3.8.0"
+  }
+}

@@ -1,0 +1,44 @@
+==========
+ADD HL,r16
+==========
+
+add hl, bc
+add hl, de
+add hl, hl
+
+---
+
+(source_file
+  (mnemonic (hl) (r16))
+  (mnemonic (hl) (r16))
+  (mnemonic (hl) (r16)))
+
+======
+DEC r16
+======
+
+dec hl
+dec de
+dec bc
+
+---
+
+(source_file
+  (mnemonic (r16))
+  (mnemonic (r16))
+  (mnemonic (r16)))
+
+======
+INC r16
+======
+
+inc hl
+inc de
+inc bc
+
+---
+
+(source_file
+  (mnemonic (r16))
+  (mnemonic (r16))
+  (mnemonic (r16)))

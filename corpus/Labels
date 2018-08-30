@@ -1,0 +1,99 @@
+============
+Global label
+============
+
+GlobalLabel 
+
+---
+
+(source_file (label_definition))
+
+=======================
+Global label with colon
+=======================
+
+AnotherGlobal: 
+
+---
+
+(source_file (label_definition))
+
+===========
+Local label
+===========
+
+.locallabel 
+
+---
+
+(source_file (label_definition))
+
+======================
+Local label with colon
+======================
+
+.yet_a_local: 
+
+---
+
+(source_file (label_definition))
+
+======================
+Global and local label
+======================
+
+AnotherGlobal.with_another_local: 
+
+---
+
+(source_file (label_definition))
+
+=====================
+Exported global label
+=====================
+
+ThisWillBeExported:: ;note the two colons 
+
+---
+
+(source_file (label_definition) (comment))
+
+===============================
+Exported global and local label
+===============================
+
+ThisWillBeExported.too::
+
+---
+
+(source_file (label_definition))
+
+====================================
+False positive: Exported local label
+====================================
+
+.this_will_not_be_exported::
+
+---
+
+(source_file (ERROR))
+
+==================================
+False positive: Three scope label
+==================================
+
+Scope1.Scope2.local:
+
+---
+
+(source_file (label_definition) (MISSING) (label_definition))
+
+==================
+False positive: Leading whitespace before label
+==================
+
+ ThisIsNotAValidLabel:
+
+---
+
+(source_file (ERROR))

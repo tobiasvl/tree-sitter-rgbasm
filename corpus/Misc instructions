@@ -1,0 +1,89 @@
+=====
+CCF
+=====
+
+ccf
+
+---
+
+(source_file (mnemonic))
+
+=====
+CPL
+=====
+
+cpl
+
+---
+
+(source_file (mnemonic))
+
+=====
+DAA
+=====
+
+daa
+
+---
+
+(source_file (mnemonic))
+
+=====
+DI
+=====
+
+di
+
+---
+
+(source_file (mnemonic))
+
+=====
+EI
+=====
+
+ei
+
+---
+
+(source_file (mnemonic))
+
+=====
+HALT
+=====
+
+halt
+
+---
+
+(source_file (mnemonic))
+
+=====
+NOP
+=====
+
+nop
+
+---
+
+(source_file (mnemonic))
+
+=====
+SCF
+=====
+
+scf
+
+---
+
+(source_file (mnemonic))
+
+=====
+STOP
+=====
+
+stop
+
+---
+
+(source_file (mnemonic))

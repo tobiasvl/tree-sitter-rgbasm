@@ -1,0 +1,29 @@
+================
+Asterisk comment
+================
+
+* This is a special start of line comment
+ld a,87 * This comment is invalid, there should be a linebreak before it
+
+---
+
+(source_file
+  (comment)
+  (mnemonic (r8 (a)) (n8)) (MISSING) (comment))
+
+=======
+Comment
+=======
+
+; This is a regular comment
+Label: ; A comment
+ld a,87 ; This is a regular comment
+Label: ld a, 87 ; Also a comment
+
+---
+
+(source_file
+  (comment)
+  (label_definition) (comment)
+  (mnemonic (r8 (a)) (n8)) (comment)
+  (label_definition) (mnemonic (r8 (a)) (n8)) (comment))
